@@ -1,0 +1,23 @@
+{
+  "name": "aoc_2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justega247/AOC_2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justega247/AOC_2021/issues"
+  },
+  "homepage": "https://github.com/justega247/AOC_2021#readme",
+  "devDependencies": {
+    "jest": "^27.4.3"
+  }
+}
