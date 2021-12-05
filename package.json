@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest --passWithNoTests"
   },
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/justega247/AOC_2021#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "jest": "^27.4.3"
   }
 }
