@@ -53,4 +53,4 @@ export const multiplyAimDisplacements = (displacements) => {
 }
 
 console.log("The result of multiplying the displacements is: ", multiplyDisplacements(formattedInput))
-console.log("The result of multiplying the displacements is: ", multiplyAimDisplacements(formattedInput))
+console.log("The result of multiplying the aim displacements is: ", multiplyAimDisplacements(formattedInput))
