@@ -9,17 +9,16 @@ const formattedInput = readInput.trim().replace(regex, '').split(',').map(x => N
 const readyBaseData = (input) => {
 
   let mappedInput = input.reduce((obj, b) => {
-      obj[b] = ++obj[b] || 1;
-      return obj;
+    obj[b] = ++obj[b] || 1;
+    return obj;
   }, {});
 
   let checkData = Array(9).fill(0)
 
   for (let entry in mappedInput) {
-      let intValue = Number(entry)
+    let intValue = Number(entry)
 
-      checkData[intValue] = mappedInput[entry]
-
+    checkData[intValue] = mappedInput[entry]
   }
 
   return checkData
@@ -45,7 +44,6 @@ export const countLanternFish = (input, days) => {
   const data = readyBaseData(input)
 
   while (days > 0) {
-
       input = generateNext(data)
       days -= 1
   }
@@ -53,7 +51,6 @@ export const countLanternFish = (input, days) => {
   const reducer = (previousValue, currentValue) => Number(previousValue) + Number(currentValue);
 
   const numberOfFish = input.reduce(reducer, 0)
-
 
   return numberOfFish
 }
